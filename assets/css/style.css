@@ -1,0 +1,71 @@
+/* Importing Main Page and Posts Styling */
+@import url(home.css);
+@import url(posts.css);
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .blog-main {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+    .num-btn {
+        padding: 10px;
+    }
+    .blog-footer{
+        flex-direction: column;
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+.blog-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.blog-footer p {
+    margin: 1rem;
+}

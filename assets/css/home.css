@@ -1,0 +1,26 @@
+/* Blog Header */
+.blog-header {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Blog Main Content */
+.blog-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h2 {
+    color: #4CAF50;
+}
